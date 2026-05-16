@@ -18,6 +18,8 @@
 		1618B1EC2FB8849D006B83A8 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1EB2FB8849D006B83A8 /* EditorView.swift */; };
 		1618B1F52FB884D1006B83A8 /* BatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1F32FB884D1006B83A8 /* BatchView.swift */; };
 		1618B1F82FB884D1006B83A8 /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1F62FB884D1006B83A8 /* TemplatesView.swift */; };
+		1618B2032FB89010006B83A8 /* LiquidGlassStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B2022FB89010006B83A8 /* LiquidGlassStyles.swift */; };
+		1618B2052FB89020006B83A8 /* TemplateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B2042FB89020006B83A8 /* TemplateCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		1618B1EB2FB8849D006B83A8 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		1618B1F32FB884D1006B83A8 /* BatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchView.swift; sourceTree = "<group>"; };
 		1618B1F62FB884D1006B83A8 /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesView.swift; sourceTree = "<group>"; };
+		1618B2022FB89010006B83A8 /* LiquidGlassStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassStyles.swift; sourceTree = "<group>"; };
+		1618B2042FB89020006B83A8 /* TemplateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCard.swift; sourceTree = "<group>"; };
 		1633BBD02FB09C4E00AE0A53 /* WatermarkIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatermarkIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,9 +80,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		1618B2012FB89010006B83A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1618B2022FB89010006B83A8 /* LiquidGlassStyles.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		1618B1D62FB87FDA006B83A8 /* WatermarkIT */ = {
 			isa = PBXGroup;
 			children = (
+				1618B2012FB89010006B83A8 /* UI */,
 				1618B1E82FB88430006B83A8 /* Services */,
 				1618B1E22FB8840C006B83A8 /* ViewModels */,
 				1618B1DD2FB88379006B83A8 /* Info.plist */,
@@ -125,6 +138,7 @@
 		1618B1F72FB884D1006B83A8 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				1618B2042FB89020006B83A8 /* TemplateCard.swift */,
 				1618B1F62FB884D1006B83A8 /* TemplatesView.swift */,
 			);
 			path = Templates;
@@ -228,6 +242,8 @@
 				1618B1EC2FB8849D006B83A8 /* EditorView.swift in Sources */,
 				1618B1DB2FB87FDA006B83A8 /* HomeView.swift in Sources */,
 				1618B1DC2FB87FDA006B83A8 /* WatermarkITApp.swift in Sources */,
+				1618B2032FB89010006B83A8 /* LiquidGlassStyles.swift in Sources */,
+				1618B2052FB89020006B83A8 /* TemplateCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -345,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
