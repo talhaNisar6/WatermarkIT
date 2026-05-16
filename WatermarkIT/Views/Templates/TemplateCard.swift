@@ -8,18 +8,24 @@ import SwiftUI
 struct TemplateCard: View {
     let template: WatermarkTemplate
 
+    private let previewImage: UIImage
+
+    init(template: WatermarkTemplate) {
+        self.template = template
+        self.previewImage = WatermarkRenderer.renderThumbnail(
+            image: WatermarkRenderer.previewSampleImage,
+            config: template.config
+        )
+    }
+
     var body: some View {
         VStack(spacing: 4) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color(.systemGray))
-                    .frame(width: 130, height: 98)
-
-                Text(template.config.text)
-                    .font(.system(size: max(template.config.fontSize * 0.25, 8)))
-                    .foregroundStyle(template.config.color)
-                    .opacity(template.config.opacity)
-            }
+            Image(uiImage: previewImage)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 130, height: 98)
+                .clipped()
+                .clipShape(RoundedRectangle(cornerRadius: 12))
 
             Text(template.name)
                 .font(.caption)

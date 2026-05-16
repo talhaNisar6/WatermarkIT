@@ -93,7 +93,7 @@ extension WatermarkTemplate {
                 isBuiltIn: true
             ),
 
-            // 3. Subtle Diagonal — small text, center, very low opacity
+            // 3. Subtle Diagonal — rotated text, center, very low opacity
             WatermarkTemplate(
                 name: "Subtle Diagonal",
                 config: WatermarkConfig(
@@ -104,7 +104,8 @@ extension WatermarkTemplate {
                     opacity: 0.2,
                     colorHex: "#FFFFFF",
                     positionX: 0.5,
-                    positionY: 0.5
+                    positionY: 0.5,
+                    rotationDegrees: -35
                 ),
                 isBuiltIn: true
             ),

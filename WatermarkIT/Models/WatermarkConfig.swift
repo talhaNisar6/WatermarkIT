@@ -34,6 +34,7 @@ struct WatermarkConfig: Codable {
     // So position works correctly on any image size
     var positionX: CGFloat = 0.85          // default bottom-right
     var positionY: CGFloat = 0.90
+    var rotationDegrees: CGFloat = 0       // clockwise; e.g. -35 for diagonal
 
     // MARK: - Logo settings
     // Logo image is NOT stored here — UIImage is not Codable
@@ -45,6 +46,10 @@ struct WatermarkConfig: Codable {
     // Converts hex string back to SwiftUI Color for use in views
     var color: Color {
         Color(hex: colorHex) ?? .white
+    }
+
+    var rotationRadians: CGFloat {
+        rotationDegrees * .pi / 180
     }
 
     // Human-readable font name → actual font
