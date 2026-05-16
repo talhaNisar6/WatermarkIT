@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1618B1D72FB87FDA006B83A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1618B1D42FB87FDA006B83A8 /* Assets.xcassets */; };
+		1618B1D82FB87FDA006B83A8 /* ExportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1CD2FB87FDA006B83A8 /* ExportOptions.swift */; };
+		1618B1D92FB87FDA006B83A8 /* WatermarkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1CE2FB87FDA006B83A8 /* WatermarkConfig.swift */; };
+		1618B1DA2FB87FDA006B83A8 /* WatermarkTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1CF2FB87FDA006B83A8 /* WatermarkTemplate.swift */; };
+		1618B1DB2FB87FDA006B83A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1D12FB87FDA006B83A8 /* HomeView.swift */; };
+		1618B1DC2FB87FDA006B83A8 /* WatermarkITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1D52FB87FDA006B83A8 /* WatermarkITApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1618B1CD2FB87FDA006B83A8 /* ExportOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportOptions.swift; sourceTree = "<group>"; };
+		1618B1CE2FB87FDA006B83A8 /* WatermarkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkConfig.swift; sourceTree = "<group>"; };
+		1618B1CF2FB87FDA006B83A8 /* WatermarkTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkTemplate.swift; sourceTree = "<group>"; };
+		1618B1D12FB87FDA006B83A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1618B1D42FB87FDA006B83A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1618B1D52FB87FDA006B83A8 /* WatermarkITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkITApp.swift; sourceTree = "<group>"; };
 		1633BBD02FB09C4E00AE0A53 /* WatermarkIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatermarkIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1633BBD22FB09C4E00AE0A53 /* WatermarkIT */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WatermarkIT;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1633BBCD2FB09C4E00AE0A53 /* Frameworks */ = {
@@ -29,10 +36,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1618B1D02FB87FDA006B83A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1CD2FB87FDA006B83A8 /* ExportOptions.swift */,
+				1618B1CE2FB87FDA006B83A8 /* WatermarkConfig.swift */,
+				1618B1CF2FB87FDA006B83A8 /* WatermarkTemplate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1618B1D22FB87FDA006B83A8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1D12FB87FDA006B83A8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1618B1D32FB87FDA006B83A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1D22FB87FDA006B83A8 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1618B1D62FB87FDA006B83A8 /* WatermarkIT */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1D02FB87FDA006B83A8 /* Models */,
+				1618B1D32FB87FDA006B83A8 /* Views */,
+				1618B1D42FB87FDA006B83A8 /* Assets.xcassets */,
+				1618B1D52FB87FDA006B83A8 /* WatermarkITApp.swift */,
+			);
+			path = WatermarkIT;
+			sourceTree = "<group>";
+		};
 		1633BBC72FB09C4E00AE0A53 = {
 			isa = PBXGroup;
 			children = (
-				1633BBD22FB09C4E00AE0A53 /* WatermarkIT */,
+				1618B1D62FB87FDA006B83A8 /* WatermarkIT */,
 				1633BBD12FB09C4E00AE0A53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +103,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1633BBD22FB09C4E00AE0A53 /* WatermarkIT */,
 			);
 			name = WatermarkIT;
 			packageProductDependencies = (
@@ -109,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1618B1D72FB87FDA006B83A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1618B1D82FB87FDA006B83A8 /* ExportOptions.swift in Sources */,
+				1618B1D92FB87FDA006B83A8 /* WatermarkConfig.swift in Sources */,
+				1618B1DA2FB87FDA006B83A8 /* WatermarkTemplate.swift in Sources */,
+				1618B1DB2FB87FDA006B83A8 /* HomeView.swift in Sources */,
+				1618B1DC2FB87FDA006B83A8 /* WatermarkITApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
