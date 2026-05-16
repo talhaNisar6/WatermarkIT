@@ -1,3 +1,6 @@
+# Capsule context cache (fetched from MCP, not for version control)
+.capsule-context/
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore

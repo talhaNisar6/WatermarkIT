@@ -52,6 +52,7 @@ struct HomeView: View {
                 .background(Color.clear)
                 .padding(.horizontal, 16)
                 .padding(.top, 24)
+                .padding(.bottom, 34)
             }
             .background(Color(.systemGroupedBackground))
             .scrollIndicators(.hidden)
@@ -111,11 +112,12 @@ struct HomeView: View {
                 Label("Batch Import", systemImage: "square.stack")
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.primary)
                     .fontWeight(.semibold)
+                    .background(Color(.secondarySystemGroupedBackground))
                     .clipShape(.capsule)
             }
-            .buttonStyle(glassOrPressButtonStyle(tint: .purple.opacity(0.7)))
+            .buttonStyle(glassOrPressButtonStyle())
         }
     }
 
@@ -289,7 +291,7 @@ struct TemplateCard: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 18)
                     .fill(Color(.systemGray))
-                    .frame(width: 130, height: 93)
+                    .frame(width: 130, height: 98)
 
                 Text(template.config.text)
                     .font(.system(size: max(template.config.fontSize * 0.25, 8)))
