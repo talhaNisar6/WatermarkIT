@@ -13,6 +13,11 @@
 		1618B1DA2FB87FDA006B83A8 /* WatermarkTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1CF2FB87FDA006B83A8 /* WatermarkTemplate.swift */; };
 		1618B1DB2FB87FDA006B83A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1D12FB87FDA006B83A8 /* HomeView.swift */; };
 		1618B1DC2FB87FDA006B83A8 /* WatermarkITApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1D52FB87FDA006B83A8 /* WatermarkITApp.swift */; };
+		1618B1E32FB8840C006B83A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1E12FB8840C006B83A8 /* HomeViewModel.swift */; };
+		1618B1E92FB88430006B83A8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1E72FB88430006B83A8 /* ImagePicker.swift */; };
+		1618B1EC2FB8849D006B83A8 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1EB2FB8849D006B83A8 /* EditorView.swift */; };
+		1618B1F52FB884D1006B83A8 /* BatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1F32FB884D1006B83A8 /* BatchView.swift */; };
+		1618B1F82FB884D1006B83A8 /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618B1F62FB884D1006B83A8 /* TemplatesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		1618B1D12FB87FDA006B83A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1618B1D42FB87FDA006B83A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1618B1D52FB87FDA006B83A8 /* WatermarkITApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkITApp.swift; sourceTree = "<group>"; };
+		1618B1DD2FB88379006B83A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1618B1E12FB8840C006B83A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1618B1E72FB88430006B83A8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1618B1EB2FB8849D006B83A8 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		1618B1F32FB884D1006B83A8 /* BatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchView.swift; sourceTree = "<group>"; };
+		1618B1F62FB884D1006B83A8 /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesView.swift; sourceTree = "<group>"; };
 		1633BBD02FB09C4E00AE0A53 /* WatermarkIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatermarkIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,6 +68,9 @@
 		1618B1D32FB87FDA006B83A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1618B1F42FB884D1006B83A8 /* Batch */,
+				1618B1F72FB884D1006B83A8 /* Templates */,
+				1618B1EA2FB88495006B83A8 /* Editor */,
 				1618B1D22FB87FDA006B83A8 /* Home */,
 			);
 			path = Views;
@@ -65,12 +79,55 @@
 		1618B1D62FB87FDA006B83A8 /* WatermarkIT */ = {
 			isa = PBXGroup;
 			children = (
+				1618B1E82FB88430006B83A8 /* Services */,
+				1618B1E22FB8840C006B83A8 /* ViewModels */,
+				1618B1DD2FB88379006B83A8 /* Info.plist */,
 				1618B1D02FB87FDA006B83A8 /* Models */,
 				1618B1D32FB87FDA006B83A8 /* Views */,
 				1618B1D42FB87FDA006B83A8 /* Assets.xcassets */,
 				1618B1D52FB87FDA006B83A8 /* WatermarkITApp.swift */,
 			);
 			path = WatermarkIT;
+			sourceTree = "<group>";
+		};
+		1618B1E22FB8840C006B83A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1E12FB8840C006B83A8 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1618B1E82FB88430006B83A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1E72FB88430006B83A8 /* ImagePicker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1618B1EA2FB88495006B83A8 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1EB2FB8849D006B83A8 /* EditorView.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		1618B1F42FB884D1006B83A8 /* Batch */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1F32FB884D1006B83A8 /* BatchView.swift */,
+			);
+			path = Batch;
+			sourceTree = "<group>";
+		};
+		1618B1F72FB884D1006B83A8 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				1618B1F62FB884D1006B83A8 /* TemplatesView.swift */,
+			);
+			path = Templates;
 			sourceTree = "<group>";
 		};
 		1633BBC72FB09C4E00AE0A53 = {
@@ -162,8 +219,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1618B1D82FB87FDA006B83A8 /* ExportOptions.swift in Sources */,
+				1618B1E32FB8840C006B83A8 /* HomeViewModel.swift in Sources */,
 				1618B1D92FB87FDA006B83A8 /* WatermarkConfig.swift in Sources */,
+				1618B1E92FB88430006B83A8 /* ImagePicker.swift in Sources */,
+				1618B1F82FB884D1006B83A8 /* TemplatesView.swift in Sources */,
 				1618B1DA2FB87FDA006B83A8 /* WatermarkTemplate.swift in Sources */,
+				1618B1F52FB884D1006B83A8 /* BatchView.swift in Sources */,
+				1618B1EC2FB8849D006B83A8 /* EditorView.swift in Sources */,
 				1618B1DB2FB87FDA006B83A8 /* HomeView.swift in Sources */,
 				1618B1DC2FB87FDA006B83A8 /* WatermarkITApp.swift in Sources */,
 			);
@@ -303,11 +365,14 @@
 				DEVELOPMENT_TEAM = 485CJ723F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatermarkIT/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "WatermarkIt needs access to your photos to add watermarks.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,11 +400,14 @@
 				DEVELOPMENT_TEAM = 485CJ723F3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatermarkIT/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "WatermarkIt needs access to your photos to add watermarks.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
